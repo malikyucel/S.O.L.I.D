@@ -1428,7 +1428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 204c1b61e30d65642acccc911a0a47fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 1
+  rotateSpeed: 0.75
 --- !u!1 &1513077146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1922,11 +1922,11 @@ Transform:
   m_GameObject: {fileID: 1881424118}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.53729963, z: -0, w: 0.8433915}
-  m_LocalPosition: {x: -4.8900204, y: -3.6793613, z: 2.1175199}
-  m_LocalScale: {x: 7.0892997, y: 1, z: 2.0586002}
+  m_LocalPosition: {x: 8.4, y: -2.3900003, z: -4.2}
+  m_LocalScale: {x: 7.0893, y: 1, z: 2.0586004}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2002128751}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 65, z: 0}
 --- !u!64 &1881424120
 MeshCollider:
@@ -2003,38 +2003,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881424118}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2002128750
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2002128751}
-  m_Layer: 0
-  m_Name: Environment
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2002128751
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002128750}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.29002, y: 1.2893611, z: -6.3175197}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1881424119}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2070801285
 GameObject:
   m_ObjectHideFlags: 0
@@ -2163,7 +2131,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 530784736}
   - {fileID: 167441073}
-  - {fileID: 2002128751}
+  - {fileID: 1881424119}
   - {fileID: 1356512705}
   - {fileID: 2070801286}
   - {fileID: 1513077152}
