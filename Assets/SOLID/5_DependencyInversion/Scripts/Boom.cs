@@ -5,21 +5,45 @@ public class Boom : MonoBehaviour,IActive
 {
     private bool isActive;
     public bool IsActive => isActive;
+    Vector3 startScale, startPos;
+
+    private void Start()
+    {
+        startScale = transform.localScale;
+        startPos = transform.position;
+    }
+
+    public void Active()
+    {
+        if (!isActive)
+        {
+            Activate();
+            isActive = !isActive;
+            return;
+        }
+        else
+        {
+            Deactivate();
+            isActive = !isActive;
+            return;
+        }
+    }
 
     public void Activate()
     {
-        Debug.Log("Deactive");
-        float yPos = transform.position.y;
-        transform.DOMoveY(yPos -5f, 1f).OnComplete(() =>
+        transform.DOMoveY(startPos.y - 5f, 1f).OnComplete(() =>
         {
             transform.DOScale(3f, 2f)
                 .SetLoops(-1, LoopType.Yoyo);
         });
-            
+        
     }
 
     public void Deactivate()
     {
-        Debug.Log("Deactive");
+        DOTween.Kill(transform, true);
+
+        transform.position = startPos;
+        transform.localScale = startScale;
     }
 }

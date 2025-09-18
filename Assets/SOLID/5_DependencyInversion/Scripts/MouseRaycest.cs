@@ -14,7 +14,7 @@ public class MouseRaycast : MonoBehaviour
             {
                 if (hit.transform.TryGetComponent<IActive>(out IActive active))
                 {
-                    active.Activate();
+                    active.Active();
                 }
             }
         }

@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SOLID/1_SingleResponsibility/Scene/SingleResponsibilityScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/SOLID/2_Open-Closed/Scene/OpenClosedScene.unity
+    guid: b05a8d7afd7b02c4dbc5e3fa616cf8bb
+  - enabled: 1
+    path: Assets/SOLID/3_LiskovSubstitution/Scene/LisovSubstitution.unity
+    guid: 39f7659dcc650e44eb3ae11fc7631b31
+  - enabled: 1
+    path: Assets/SOLID/4_InterfaceSegregation/InterfaceSegregationScene.unity
+    guid: 73075f4546bcd1648ad7033820a4066d
+  - enabled: 1
+    path: Assets/SOLID/5_DependencyInversion/Scene/DependencyInversionScene.unity
+    guid: 4224914e3d5b03543b3b9dc5773081d5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 146c065b45d1b6f48b41a8044f932b94, type: 3}
   m_UseUCBPForAssetBundles: 0
